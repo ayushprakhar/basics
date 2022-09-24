@@ -1,0 +1,52 @@
+<html>
+    <style>
+		#box1{background:rgb(28, 100, 100); text-align: center;}
+		#box2{background:rgb(110, 136, 135);text-align: center;}
+        #box3{
+			background-color:rgb(104, 92, 92);
+            text-align: center;
+			width:1125px;
+            align-content: center;
+			border:15px solid rgb(144, 185, 231);
+			padding:100px;
+			margin:100px;
+			}
+
+			p:hover{
+				font-size: xx-large;
+			}
+		
+	</style>
+<script>
+		function largePic(x){
+			x.style.width="640px";
+			x.style.height="320px";
+		}
+		function normPic(x){
+			x.style.width="320px";
+			x.style.height="180px";
+		}
+		function TextLarge(){
+		document.getElementById("Enlarge").style.fontsize="125px";
+		}
+		function TextSmaller(){
+		document.getElementById("Enlarge").style.fontsize="100px";
+		}
+</script>
+<body>
+
+	<div id="box1">
+		<p>AYUSH PRAKHAR</p>
+		<p>202000122</p>
+	</div>
+	<div id="box2">
+		<h2> Picture and name of your fav personality</h2>
+        <img onmouseover="largePic(this)" onmouseout="normPic(this)" src="gojo.jpg" width="320" height="180">
+        <p id="Enlarge" onmouseover="TextLarge()" onmouseout="TextSmaller()">GOJO SATORU</p>
+	</div>
+    <div id="box3">
+        ayush_202000122@smit.smu.edu.in
+    </div>
+
+</html>
+</body>
